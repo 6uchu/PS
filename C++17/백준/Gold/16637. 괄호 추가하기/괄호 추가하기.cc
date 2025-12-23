@@ -13,11 +13,12 @@ int cal(int k, int front, int rear){
 }
 
 void go(int i, int val){
-    if(i == nn - 1)
+    if(i == nn - 1){
         if(ret < val) ret = val;
+        return;
+    }
 
-    if(i + 1 < nn) // <- 이거 필요한 이유?
-        go(i + 1, cal(i, val, n[i + 1]));
+    go(i + 1, cal(i, val, n[i + 1]));
     if(i + 2 < nn)
         go(i + 2, cal(i, val, cal(i + 1, n[i + 1], n[i + 2])));
 }
