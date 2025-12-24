@@ -13,6 +13,11 @@ int main(){
     cin.tie(NULL);
     cin >> n >> k;
 
+    if(n == k){ //예외처리
+        cout << 0 << '\n' << 1 << '\n';
+        return 0;
+    }
+
     visited[n] = 1; // 초기 정점이 0이면 무조건 예외 처리 해줘야함
     cnt[n] = 1;
     q.push(n);
