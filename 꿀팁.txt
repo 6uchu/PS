@@ -1,0 +1,2 @@
+짝짓기는 stack
+trace는 prev[next] = here
