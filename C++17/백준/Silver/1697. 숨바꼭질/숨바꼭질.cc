@@ -4,10 +4,6 @@ int n, k;
 int visited[200'004];
 queue<int> q;
 
-void bfs(int here, int dep){
-
-}
-
 int main(){
     ios::sync_with_stdio(false);
     cin.tie(NULL);
